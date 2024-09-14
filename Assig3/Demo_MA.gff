@@ -1,0 +1,4 @@
+CM019999.1	.	CDS	1000	2000	.	+	.	Parent=Transcript1
+CM019999.1	.	CDS	1500	2500	.	-	.	Parent=Transcript2
+CM019999.1	.	CDS	0700	900	.	+	.	Parent=Transcript1
+CM019999.1	.	CDS	800	1100	.	-	.	Parent=Transcript2
