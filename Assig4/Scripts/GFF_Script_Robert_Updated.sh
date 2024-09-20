@@ -27,8 +27,8 @@ gunzip ${FILE}
 echo "Total number of features in the GFF3 file: $(cat ${UNZIPPED} | grep -v "^#" | wc -l)"
 
 # Report and count the number of chromosomes with at least MIN_FEATURES features
-echo "Total number of chromosomes with at least $MIN_FEATURES features:"
-cat ${UNZIPPED} | cut -f1 | sort | uniq -c | sort -nr | awk -v min=$MIN_FEATURES '$1 >= min'
+echo "Total number of chromosomes with at least ${MIN_FEATURES} features:"
+cat ${UNZIPPED} | cut -f1 | sort | uniq -c | sort -nr | awk -v min=${MIN_FEATURES} '$1 >= min'
 
 #Print the top 10 most annotated features in the GFF3 file
 echo "Top 10 most annotated features in the GFF3 file: $(cat ${UNZIPPED} | grep -v "^#" | awk '{print $3}' | sort | uniq -c | sort -nr | head -n 10)"
