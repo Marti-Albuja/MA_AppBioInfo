@@ -1,5 +1,4 @@
 #Download fasta file from NCBI
-# Download the genome
 datasets download genome accession GCF_004799605.1
 
 # Unzip the data (Overwrite files if they already exist)
