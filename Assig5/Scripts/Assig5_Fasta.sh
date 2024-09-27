@@ -7,15 +7,15 @@ unzip -o ncbi_dataset.zip
 # Make a link to a simpler name
 ln -s ncbi_dataset/data/GCF_004799605.1/GCF_004799605.1_ASM479960v1_genomic.fna Halobacterium.fa
 
-#Extract the file name from simpler name
-FILE="Halobacterium.fa"
+# Short name for the genome file
+FILE=Halobacterium.fa
 
 #
 #-----NOTHING NEEDS TO BE CHANGED BELOW THIS LINE-----
 #
 
 # Report and count the size of the file
-echo "Size of File:$(ls -lh ${FILE} | awk '{print $5}')"
+echo "Size of File:$(du -h $(readlink ${FILE}) | cut -f1)"
 
 # Report and count the total size of the genome (number of nucleotides)
 echo "Genome Size:$(cat ${FILE} | grep -v "^>" | tr -d "\n" | wc -c)"
