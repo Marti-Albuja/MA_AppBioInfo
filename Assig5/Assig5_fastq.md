@@ -3,7 +3,7 @@
 
 ### Part 1: Select a genome, then download the corresponding FASTA file.
 
-**Selected genome:** Halobacterium salinarum (Strain: 91-R6)
+**Selected genome:** *Halobacterium salinarum* (Strain: 91-R6)
 
 The genome was downloaded and the answers to the questions were obtained using the following script:
 
@@ -26,7 +26,7 @@ Report:
 
 Set the parameters so that your target coverage is 10x.
 
-**Selected genome:** Halobacterium salinarum (Strain: 91-R6)
+**Selected genome:** *Halobacterium salinarum* (Strain: 91-R6)
 
 **Simulator:** pbsim3
 
@@ -129,7 +129,7 @@ Number of fastq reads:
 
 Size of fastq file before compression:
 
-**How big are the FASTQ files?**
+How big are the FASTQ files?
 
 * pbsim_0001.fastq: 158G
 * pbsim_0001.fastq: 10G
