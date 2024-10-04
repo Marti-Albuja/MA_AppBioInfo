@@ -44,7 +44,7 @@ I used my script on Robert Bush's data on *Xenopus tropicalis*:
 
 **Link to my bash script when using Robert's data**
 
-https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/GFF_Script_Robert.sh
+https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/GFF_Robert.sh
 
 
 My script was reusable and I was able to obtain results from Robert's data:
