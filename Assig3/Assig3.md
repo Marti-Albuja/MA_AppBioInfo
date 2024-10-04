@@ -26,7 +26,7 @@ samtools faidx GCA_009771035.1_CNRS_Lalb_1.0_genomic.fna
 ```
 #### An overview of annotations in chromosome CM019999.1 (coordinates: CM019999.1:22,108,065-22,109,292) 
 
-**Image 1**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Image1_OverviewAnnotations.png
+**Image 1**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Images/Image1.png
 
 * #### Separate intervals of type "gene" into a different file. If you don't have genes, pick another feature.
 
