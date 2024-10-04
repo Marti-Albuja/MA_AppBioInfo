@@ -39,7 +39,7 @@ cat genomic.gff | awk ' $3=="gene" { print $0 }' > genes_Lalbus.gff
 
 * #### Using your editor create a GFF that represents intervals in your genome. Load that GFF as a separate track in IGV.
 
-**GFF File Created with 2 Transcripts in Chromosome CM019999.1**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Demo_MA.gff
+**GFF File Created with 2 Transcripts in Chromosome CM019999.1**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Demo.gff
 
 **Image 3**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Images/Image3.png
 
