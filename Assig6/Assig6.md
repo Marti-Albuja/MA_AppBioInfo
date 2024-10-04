@@ -33,7 +33,7 @@ As seen in the image, reads have really low quality with 3 categories marked as 
 
 In the second set of reads, reads also seem to have really low quality with 2 categories marked as red, 3 in yellow, and 6 in green. In the red categories, we can see that "per base sequence quality" and "per base sequence content" are still the ones that seem to have the most problems.
 
-![alt text](image-3.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig6/Images/Image4.png)
 
 
 ### Part 2: Quality of filtered data
