@@ -34,7 +34,7 @@ fastq-dump -X ${N} --split-files -O ${RDIR} ${SRR}
 # Run fastqc
 fastqc -q -o ${PDIR} ${R1} ${R2}
 
-# Run fastp and trim for quality
+# Run fastp and trim for quality and read length
 fastp --cut_right -f 30 -F 30 -T 80 -i ${R1} -I ${R2} -o ${T1} -O ${T2}
 
 # Run fastqc
