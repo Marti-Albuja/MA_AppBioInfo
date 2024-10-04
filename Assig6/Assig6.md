@@ -46,7 +46,7 @@ After filtering the data using the parameters specified in the script (see above
 
 As we can see in this new image, data was significantly improved. Now there are 9 green categories and 2 yellow categories. Reads are of much better quality and the "per base sequence content improved significantly as well. Additionally, only 826 reads were lost (9174 reads remaining).
 
-![alt text](image-5.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig6/Images/Image6.png)
 
 **Fastqc report for SRR28572035_2.fastq:**
 
