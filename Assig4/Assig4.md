@@ -76,7 +76,7 @@ Instead of counting for sequence regions in general, Robert counted the number o
 
 **Link to modified bash script when using Robert's data**
 
-https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/GFF_Script_Robert_Updated.sh
+https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/GFF_Robert_Updated.sh
 
 Were you able to reproduce their results? Make a note in the report.
 
