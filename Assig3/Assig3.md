@@ -3,7 +3,7 @@
 
 ### Reformat your previous assignment
 
-https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig2/Assig2_DataAnalysis.md 
+https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig2/Assig2.md
 
 ### Visualize the GFF file of your choice
 
