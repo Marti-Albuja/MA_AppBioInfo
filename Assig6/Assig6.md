@@ -54,6 +54,6 @@ As we can see in this new image, data was significantly improved. Now there are 
 
 The same thing happened with the second set of reads. Now there are 9 green categories and 2 yellow categories. Reads are of much better quality and the "per base sequence content" improved significantly as well. Additionally, only 826 reads were lost (9174 reads remaining).
 
-![alt text](image-7.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig6/Images/Image8.png)
 
 
