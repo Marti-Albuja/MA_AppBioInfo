@@ -35,7 +35,7 @@ cat genomic.gff | awk ' $3=="gene" { print $0 }' > genes_Lalbus.gff
 ```
 #### An overview of gene annotations vs other features in chromosome CM019999.1 (coordinates: CM019999.1:11,753,971-11,758,884) 
 
-**Image 2**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Image2_GenesvsAnnot.png
+**Image 2**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Images/Image2.png
 
 * #### Using your editor create a GFF that represents intervals in your genome. Load that GFF as a separate track in IGV.
 
