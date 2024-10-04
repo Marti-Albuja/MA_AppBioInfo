@@ -25,7 +25,7 @@ This data was run with Illumina MiSeq and produced 4.3M spots/reads correspondin
 
 As seen in the image, reads have really low quality with 3 categories marked as red, 1 in yellow, and 7 in green. In the red categories, we can see that "per base sequence quality" and "per base sequence content" are the ones that seem to have the most problems.
 
-![alt text](image-1.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig6/Images/Image2.png)
 
 **Fastqc report for SRR28572035_2.fastq:**
 
