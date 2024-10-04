@@ -41,5 +41,5 @@ cat genomic.gff | awk ' $3=="gene" { print $0 }' > genes_Lalbus.gff
 
 **GFF File Created with 2 Transcripts in Chromosome CM019999.1**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Demo_MA.gff
 
-**Image 3**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Image3_CreatedGFF.png
+**Image 3**: https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig3/Images/Image3.png
 
