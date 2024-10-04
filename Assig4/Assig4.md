@@ -9,7 +9,7 @@ Rewrite all the code from that report as a Bash script.
 
 **Link to my bash script**
 
-https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/GFF_MyScript.sh
+https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig4/Scripts/MyGFF.sh
 
 Run your script on your original data and verify that it works. 
 
