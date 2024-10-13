@@ -117,7 +117,7 @@ all2: genome simulate
 ##--------------------------------------------##
 
 clean:
-	rm -rf ${RDIR} ${PDIR} ${GENOME} ${MODEL} ncbi_dataset.zip Halobacterium.fa QSHMM-RSII.model fastp.json fastp.html ncbi_dataset md5sum.txt simulate 
+	rm -rf ${RDIR} ${PDIR} ${GENOME} ${MODEL} ncbi_dataset.zip Halobacterium.fa QSHMM-RSII.model fastp.json fastp.html ncbi_dataset md5sum.txt simulate README.md 
 
 ##--------------------------------------------##
 	
