@@ -141,7 +141,7 @@ align:
 
 stats:
 
-# Generate alignment statistics
+	# Generate alignment statistics
 	samtools flagstat bam/downloaded.bam > bam/downloaded.flagstat
 	samtools flagstat bam/simulated.bam > bam/simulated.flagstat
 
