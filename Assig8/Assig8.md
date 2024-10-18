@@ -42,7 +42,7 @@ This new Makefile includes three new targets:
 
 **Visualize the resulting BAM files for your simulated reads and the reads downloaded from SRA.**
 
-![alt text](image-8.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig8/Images/Image1.png)
 
 **Generate alignment statistics for the reads from both sources, simulated and SRA.**
 
