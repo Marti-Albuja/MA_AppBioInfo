@@ -48,7 +48,7 @@ This new Makefile includes three new targets:
 
 Downloaded reads alignment statistics:
 
-![alt text](image-9.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig8/Images/Image2.png)
 
 Simulated reads alignment statistics:
 
