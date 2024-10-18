@@ -52,7 +52,7 @@ Downloaded reads alignment statistics:
 
 Simulated reads alignment statistics:
 
-![alt text](image-10.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig8/Images/Image3.png)
 
 **Briefly describe the differences between the two datasets.**
 
