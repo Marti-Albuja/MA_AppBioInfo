@@ -71,6 +71,6 @@ Original Bam File:
 
 Filtered Bam file:
 
-![alt text](image-1.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig9/Images/Image2.png)
 
 The % of mapped reads increased from 84.16% to 100% after the filtering process.
