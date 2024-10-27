@@ -9,7 +9,7 @@ In your report, show the commands and the answers for each of these questions:
 
 https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig9/Makefile
 
-All the following commands can be run in the makefile by using the following command:
+All the following commands can be run in the Makefile by using the following command:
 
     make analyze
 
