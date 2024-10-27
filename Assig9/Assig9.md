@@ -67,7 +67,7 @@ In the Makefile, the command being used is:
 
 Original Bam File:
 
-![alt text](image.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig9/Images/Image1.png)
 
 Filtered Bam file:
 
