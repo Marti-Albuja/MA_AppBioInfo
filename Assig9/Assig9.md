@@ -65,6 +65,15 @@ In the Makefile, the command being used is:
 
 **Compare the flagstats for your original and your filtered BAM file.**
 
+To get the flagstat files using the Makefile, type the command:
+
+    make compare
+
+In the Makefile, the commands being used are:
+
+    samtools flagstat bam/downloaded.bam > bam/downloaded.flagstat
+	samtools flagstat bam/downloaded.filtered.bam > bam/downloaded.filtered.flagstat
+
 Original Bam File:
 
 ![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig9/Images/Image1.png)
