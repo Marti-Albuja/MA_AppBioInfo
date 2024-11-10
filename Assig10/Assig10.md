@@ -69,6 +69,8 @@ Indel:
 
 **Example 3:**
 
+Indel:
+
     NZ_CP038631.1   22417  .  CTG  C   5.04449 .  INDEL;IDV=2;IMF=1;DP=2;VDB=0.92;SGB=-0.453602;MQSBZ=0; MQ0F=0;AC=2;AN=2;DP4=0,0,1,1;MQ=60  GT:PL 1/1:33,6,0
 
 1. This is another example of a deletion in position 22,417.
@@ -77,7 +79,7 @@ Indel:
 
 **Verify the variant caller's results by looking at a few example alignments in the BAM file.**
 
-![alt text](image-13.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig10/Images/Image1.png)
 
 As we can see in the image, there are a lot of variants (especially SNPs) that can be identified in this particular region of the genome in different shades of blue. 
 
