@@ -107,6 +107,6 @@ To look for False Negatives, we assume that these may occur in areas with low co
 
 **Example 2:**
 
-![alt text](image-15.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig10/Images/Image3.png)
 
 
