@@ -82,4 +82,4 @@ Of all the variants called, 99.3% are SNV or Single Nucleotide Variations/ Polym
 
 Based on the analyzed data, it seems that most of the SNPs cause changes in regions between genes. This could mean that they are probably not changing the transcription or translation of proteins, and therefore, the normal function of the proteins. The other variants are either downstream or upstream of a gene which could potentially be influencing promoter regions.
 
-![alt text](image-18.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig11/Images/Image3.png)
