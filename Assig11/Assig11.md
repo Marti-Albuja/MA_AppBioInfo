@@ -74,7 +74,7 @@ The results were visualized in the resulting .html file.
 
 In general, 10,181 variants were processed in the genome of *Halobacterium*.
 
-![alt text](image-16.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig11/Images/Image1.png)
 
 Of all the variants called, 99.3% are SNV or Single Nucleotide Variations/ Polymorphisms and only 0.7% correspond to indels.
 
