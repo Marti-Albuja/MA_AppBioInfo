@@ -80,6 +80,7 @@ The targets available in the Makefile are:
     bcftools merge SRR064729.aligned_reads.vcf.gz SRR3924292.aligned_reads.vcf.gz SRR3924294.aligned_reads.vcf.gz SRR3924295.aligned_reads.vcf.gz -Oz -o merged.vcf.gz
 
     # Index the merged file
+    
     bcftools index merged.vcf.gz
 
 **Finally, visualize the different variants in IGV:**
