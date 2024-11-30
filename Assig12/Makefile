@@ -8,7 +8,7 @@ MAKEFLAGS += --no-builtin-rules
 ##--------------------------------------------##
 
 # SRR number to download reads
-SRR=DRR065898
+SRR=SRR064728
 
 # Number of reads to download
 N=10000
@@ -28,13 +28,13 @@ RDIR=reads
 PDIR=reports
 
 # The accession number of the genome
-ACC=GCA_008636005.1
+ACC=GCF_000186365.1
 
 # The name of the genome file
-GENOME=Striga.fa
+GENOME=Desulfurococcus.fa
 
 # The name of the GFF file
-GFF=Striga.gff
+GFF=Desulfurococcus.gff
 
 ##--------------------------------------------##
 
@@ -78,10 +78,10 @@ download:
 	unzip -o ncbi_dataset.zip
 
 	# Make a link to a simpler genome name
-	ln -sf ncbi_dataset/data/GCA_008636005.1/GCA_008636005.1_SGA_v2.0_genomic.fna Striga.fa
+	ln -sf ncbi_dataset/data/GCF_000186365.1/GCF_000186365.1_ASM18636v1_genomic.fna Desulfurococcus.fa
 
 	# Make a link to a simpler GFF name
-	ln -sf ncbi_dataset/data/GCA_008636005.1/genomic.gff Striga.gff
+	ln -sf ncbi_dataset/data/GCF_000186365.1/genomic.gff Desulfurococcus.gff
 
 index: 
 	# Index the genome for alignment
@@ -108,12 +108,16 @@ variants:
 	# Call variants
 	bcftools mpileup -Ou -f ${GENOME} bam/${SRR}.aligned_reads.bam | bcftools call -mv -Oz -o vcf/${SRR}.aligned_reads.vcf.gz
 
+	# Index the VCF file
+	bcftools index vcf/${SRR}.aligned_reads.vcf.gz
+
 all: directories reads trim download index align stats variants
 
 clean:
-	rm -rf ${RDIR} ${PDIR} ncbi_dataset.zip Striga.fa Striga.gff bam vcf Striga.fa.amb Striga.fa.fai Striga.fa.pac Striga.fa.sa ${GENOME} ${GFF} ${R1} ${R2} ${T1} ${T2} ${SRR}.aligned_reads.bam ${SRR}.aligned_reads.bam.bai ${SRR}.aligned_reads.bam.flagstat vcf/${SRR}.aligned_reads.vcf.gz Striga.fa.ann Striga.fa.bwt README.md fastp.html fastp.json fastp.log fastp.html fastp.json fastp.log md5sum.txt ncbi_dataset
+	rm -rf ${RDIR} ${PDIR} ncbi_dataset.zip Desulfurococcus.fa Desulfurococcus.gff bam vcf Desulfurococcus.fa.amb Desulfurococcus.fa.fai Desulfurococcus.fa.pac Desulfurococcus.fa.sa ${GENOME} ${GFF} ${R1} ${R2} ${T1} ${T2} ${SRR}.aligned_reads.bam ${SRR}.aligned_reads.bam.bai ${SRR}.aligned_reads.bam.flagstat vcf/${SRR}.aligned_reads.vcf.gz Desulfurococcus.fa.ann Desulfurococcus.fa.bwt README.md fastp.html fastp.json fastp.log fastp.html fastp.json fastp.log md5sum.txt ncbi_dataset
 
 .PHONY: all clean directories reads trim download index align stats variants
+
 
 
 
