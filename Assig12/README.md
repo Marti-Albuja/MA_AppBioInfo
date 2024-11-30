@@ -1,41 +1,89 @@
-# NCBI Datasets
+# Applied Bioinformatics Assignment 12
+## Martina Albuja Quintana
 
-https://www.ncbi.nlm.nih.gov/datasets
+To use this Makefile for Automation, please follow the next steps:
 
-This zip archive contains an NCBI Datasets Data Package.
+**Download the data (SRR) you will be working with:**
 
-NCBI Datasets Data Packages can include sequence, annotation and other data files, and metadata in one or more data report files.
-Data report files are in JSON Lines format.
+    bio search PRJNA180 -H --csv > design1.csv
 
----
-## FAQs
-### Where is the data I requested?
+The species we will be working with is: *Desulfurococcus mucosus*
 
-Your data is in the subdirectory `ncbi_dataset/data/` contained within this zip archive.
+**Due to there being a single-end read file, we will eliminate it from our file using the following command:**
 
-### I still can't find my data, can you help?
+    awk 'NR != 3' design1.csv > design.csv 
 
-We have identified a bug affecting Mac Safari users. When downloading data from the NCBI Datasets web interface, you may see only this README file after the download has completed (while other files appear to be missing).
-As a workaround to prevent this issue from recurring, we recommend disabling automatic zip archive extraction in Safari until Apple releases a bug fix.
-For more information, visit:
-https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
+**To run the Makefile with the design.csv file, use the following command:**
 
-### How do I work with JSON Lines data reports?
+    # To see the 7 samples and commands that will be ran
 
-Visit our JSON Lines data report documentation page:
-https://www.ncbi.nlm.nih.gov/datasets/docs/v2/tutorials/working-with-jsonl-data-reports/
+    cat design.csv | parallel --dry-run --lb -j 4 --colsep , --header : make all SRR={run_accession} SAMPLE={sample_alias}
 
-### What is NCBI Datasets?
+**Results:**
 
-NCBI Datasets is a resource that lets you easily gather data from across NCBI databases. Find and download gene, transcript, protein and genome sequences, annotation and metadata.
+make all SRR=SRR064728 SAMPLE=1267
 
-### Where can I find NCBI Datasets documentation?
+make all SRR=SRR3924292 SAMPLE=4089449
 
-Visit the NCBI Datasets documentation pages:
-https://www.ncbi.nlm.nih.gov/datasets/docs/
+make all SRR=SRR3924293 SAMPLE=4089449
 
----
+make all SRR=SRR3924294 SAMPLE=4089449
 
-National Center for Biotechnology Information
-National Library of Medicine
-info@ncbi.nlm.nih.gov
+make all SRR=SRR3924295 SAMPLE=4089449
+
+make all SRR=SRR064729 SAMPLE=1267
+
+make all SRR=SRR064727 SAMPLE=1267
+
+    # To run the command
+
+    cat design.csv | parallel --lb -j 4 --colsep , --header : make all SRR={run_accession} SAMPLE={sample_alias}
+
+**At the end of the run, you will end up with 4 vcf files:**
+
+SRR064729.aligned_reads.vcf.gz
+
+SRR3924295.aligned_reads.vcf.gz
+
+SRR3924294.aligned_reads.vcf.gz
+
+SRR3924292.aligned_reads.vcf.gz   
+
+**Note:** There are only 4 output files due to duplication of files in the SRR files.
+
+**Additionally, it is important to know how this Makefile work and what does it do:**
+
+**usage:** to use all the targets of the Makefile use:
+
+    make all
+
+The targets available in the Makefile are:
+
+	clean: Remove all generated files
+	directories: Create directories for reads and reports
+	reads: Download reads and run FastQC
+	trim: Trim reads and run FastQC
+	download: Download the genome and GFF files
+	index: Index the genome for alignment
+	align: Align the reads to the genome
+	stats: Generate alignment statistics
+	variants: Call variants and filter
+
+**Note:** To download the genome of the species you want to work with replace the ACC code.
+
+    make all ACC=GCF.....
+
+**Once the final .vcf files have been processed, merge and index the files with the following commands:**
+
+    # Merge the vcf files
+
+    bcftools merge SRR064729.aligned_reads.vcf.gz SRR3924292.aligned_reads.vcf.gz SRR3924294.aligned_reads.vcf.gz SRR3924295.aligned_reads.vcf.gz -Oz -o merged.vcf.gz
+
+    # Index the merged file
+    bcftools index merged.vcf.gz
+
+**Finally, visualize the different variants in IGV:**
+
+![alt text](image-19.png)
+
+As can be observed in the image, each of the samples has different variants at various positions, but also share some between some of them.
