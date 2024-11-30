@@ -84,6 +84,6 @@ The targets available in the Makefile are:
 
 **Finally, visualize the different variants in IGV:**
 
-![alt text](image-19.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig12/Images/Image1.png)
 
 As can be observed in the image, each of the samples has different variants at various positions, but also share some between some of them.
