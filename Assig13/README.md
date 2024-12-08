@@ -49,7 +49,7 @@ To do this for all the data sets we have, use the parallel command:
 
 We will now visualize the alignment of the 5 RNA-Seq files in IGV:
 
-![alt text](image-2.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig13/Images/Image1.png)
 
 From this example of a part of the genome, we can say that in the 5 files used there are sites where the expression levels are high in every single file and sites that do no have expression at all. Then, there are also sites that are expressed in one or only a few of the RNA-Seq Files.
 
@@ -62,9 +62,13 @@ To do this, we will use the following command:
 From the summary.txt matrix file, we see that each of the five different RNA-Seq files has simiilar number of reads alligned to the reference genome; and therefore, probably, similar expression levels.
 
 SRR31641679_aligned_reads.bam = 13987
+
 SRR31641680_aligned_reads.bam =	14172
+
 SRR31641681_aligned_reads.bam = 14970
+
 SRR31641682_aligned_reads.bam = 14852
+
 SRR31641683_aligned_reads.bam = 14851
 
 **Note:** looking at read counts of individuals regions was very difficult because the matrix.txt file created had an enormous amount of information.
