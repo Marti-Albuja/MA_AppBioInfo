@@ -82,7 +82,7 @@ This target uses the following commands:
 
 **Results:**
 
-![alt text](image.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig14/Images/Image1.png)
 
 In the resulting PCA, we can see that the two groups A and B are clearly not correlated with one another and; therefore, are diferentially expressed compared to each other. It is also interesting to note that samples from group B are clustered closer together than samples from group A. These results are explained by 45% of the variance of the data (33% from PCA1 and 12% from PCA2).
 
