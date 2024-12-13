@@ -98,7 +98,7 @@ This target uses the following commands:
 
 **Results:**
 
-![alt text](image-1.png)
+![alt text](https://github.com/Marti-Albuja/MA_AppBioInfo/blob/main/Assig14/Images/Image2.png)
 
 In this image, we have the samples in the X-axis and the genes in the Y-axis. Samples colored red mean that they are upregulated genes while samples colored green mean that they underregulated genes.
 
